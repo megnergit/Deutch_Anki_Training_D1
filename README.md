@@ -1,14 +1,19 @@
 # Flet app to remember German verbs
 
-## Screenrecord
+## Screen record
 
 ![Screenshot](./assets/Screen_Recording.gif)
 
--------------------------
+
 ## Motivation
 
 I tried several ready-made apps designed to help build a foreign language vocabulary, but none of them met my needs. Therefore, I decided to create my own.
 
+### Feature
+
+* simple
+* fast
+* just ask `know` or `do not know`
 
 
 ## How to Run in Your Browser
@@ -35,6 +40,7 @@ The required format is:
 [verb], [meaning], [times you tried], [times you failed]
 ```
 
+```
 > head ./assets/verben.csv
 potenzieren, 高める 強める, 0, 0
 überlassen, 任せる , 0, 0
