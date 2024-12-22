@@ -1,55 +1,46 @@
-# Deutsch_Anki_Training_D1
+# Flet app to remember German verbs
 
-## Screenshot
+## Screenrecord
 
-<!---
-![Screenshot](./movie/nidanx4.gif)
---->
+![Screenshot](./assets/Screen_Recording.gif)
 
+-------------------------
 ## Motivation
 
-Commercial shopping lists are: 
+I tried several ready-made apps designed to help build a foreign language vocabulary, but none of them met my needs. Therefore, I decided to create my own.
 
 
-- Their layouts are too loose. Generous spacing between the items.
-  Huge waste of the realestate. I would like minimum waste and put
-  maximum numbers of items on a limited space.
 
-- They have a single long list. With time there will be a lot of duplications.
-
-- I would like to have two lists:
-  1. one for usual stuff that we buy every week.
-  2. one for the stuff that we buy this week only.
-
-
-  + The list i. can be recycled in the next wek.
-  + The list ii. can be deleted in one go. We do not need to delete one item by one item. 
-  
-
-## How to run
-
-To run the app on a desktop: 
+## How to Run in Your Browser
+To run the app:
 
 ```
-flet run
+flet run --web --port 8011
 ```
 
-In the directory that we have `main.py`.
 
-To run the app on a iPhone:
+Then, open `http://localhost:8011` in your browser.
+
+Note: `8011` can be replaced with any port number you prefer.  
+Refer to the [Flet official page](https://flet.dev/) for more details.
+
+## Preparation
+
+### Create a Vocabulary Table
+
+The required format is:
+
 
 ```
-flet run --ios
+[verb], [meaning], [times you tried], [times you failed]
 ```
 
-or 
-
+> head ./assets/verben.csv
+potenzieren, 高める 強める, 0, 0
+überlassen, 任せる , 0, 0
+erlassen, 免除する 発布する , 0, 0
+...
 ```
-flet run --ios --port 8011
-```
-
-'8011' can be any port number that you want to use.
-See [Flet official page](https://flet.dev/).
 
 -------------------------
 # END
